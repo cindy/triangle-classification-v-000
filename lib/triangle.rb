@@ -8,7 +8,7 @@ class Triangle
 
   def kind
     values = [@a, @b, @c]
-    if values.include?(0)
+    if values.min <= 0
       # require 'pry'; binding.pry
       raise Triangle::TriangleError
     elsif values == [@c] * 3
