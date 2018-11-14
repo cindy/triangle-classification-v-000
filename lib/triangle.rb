@@ -9,13 +9,13 @@ class Triangle
   def kind
     values = [@a, @b, @c]
     require 'pry'; binding.pry
-    if  values == [@c] * 3
+    if values.include?(0)
+
+      raise TriangleError
+    elsif values == [@c] * 3
       return :equilateral
     elsif values.uniq.size == 2
       return :isosceles
-    elsif values.include?(0)
-      
-      raise TriangleError
     else
       return :scalene
     end
