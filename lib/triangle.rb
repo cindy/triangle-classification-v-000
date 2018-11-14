@@ -13,11 +13,10 @@ class Triangle
     elsif values.uniq.size == 2
       return :isosceles
     elsif values.include?(0)
+      require 'pry'; binding.pry
       raise TriangleError
     else
       return :scalene
-
-
     end
   end
 end
