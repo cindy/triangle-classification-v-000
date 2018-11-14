@@ -5,9 +5,9 @@ class Triangle
     @b = b
     @c = c
   end
-  
+
   def kind
-    if @a == @b == @c
+    if @a == @b && @b == @c
       return :equilateral
     end
   end
