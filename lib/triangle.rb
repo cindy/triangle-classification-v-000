@@ -7,9 +7,11 @@ class Triangle
   end
 
   def kind
-    if [@a, @b, @c] == [@c] * 3
+    values = [@a, @b, @c]
+    if  values == [@c] * 3
       return :equilateral
-    elsif @a == @b || @a == @c ||
+    elsif values.uniq == 2
+      return :isosceles
 
     end
   end
