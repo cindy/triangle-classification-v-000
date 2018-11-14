@@ -8,7 +8,6 @@ class Triangle
 
   def kind
     values = [@a, @b, @c]
-    require 'pry'; binding.pry
     if values.include?(0)
       require 'pry'; binding.pry
       raise TriangleError
@@ -26,5 +25,3 @@ class Triangle
     # end
   end
 end
-
-
