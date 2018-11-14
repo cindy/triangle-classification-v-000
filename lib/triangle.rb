@@ -10,7 +10,7 @@ class Triangle
     values = [@a, @b, @c]
     if values.include?(0)
       # require 'pry'; binding.pry
-      raise TriangleError
+      raise Triangle::TriangleError
     elsif values == [@c] * 3
       return :equilateral
     elsif values.uniq.size == 2
