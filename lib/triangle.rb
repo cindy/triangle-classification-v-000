@@ -21,10 +21,10 @@ class Triangle
 
     end
   end
+end
 
-  class TriangleError < StandardError
-    def message
-      "Not a triangle"
-    end
+class TriangleError < StandardError
+  def message
+    "Not a triangle"
   end
 end
