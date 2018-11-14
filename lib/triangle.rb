@@ -12,7 +12,7 @@ class Triangle
       return :equilateral
     elsif values.uniq.size == 2
       return :isosceles
-    elsif values.include(0)
+    elsif values.include?(0)
       raise TriangleError
     else
       return :scalene
