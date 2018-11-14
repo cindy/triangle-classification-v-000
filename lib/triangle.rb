@@ -11,8 +11,10 @@ class Triangle
     if  values == [@c] * 3
       return :equilateral
     elsif values.uniq.size == 2
-
       return :isosceles
+    elsif values.include(0)
+      raise TriangleError
+      
 
     end
   end
