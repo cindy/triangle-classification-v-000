@@ -8,7 +8,6 @@ class Triangle
 
   def kind
     values = [@a, @b, @c]
-    require 'pry'; binding.pry
     if  values == [@c] * 3
       return :equilateral
     elsif values.uniq.size == 2
