@@ -7,8 +7,10 @@ class Triangle
   end
 
   def kind
-    if @a == @b && @b == @c
+    if (@a == @b) == @c
       return :equilateral
+    elsif @a == @b || @a == @c || 
+      
     end
   end
 
