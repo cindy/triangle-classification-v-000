@@ -8,7 +8,7 @@ class Triangle
 
   def kind
     values = [@a, @b, @c]
-    if values.min <= 0 || values.max > (values.inject(0, :+) - values.max)
+    if values.min <= 0 || values.max < (values.inject(0, :+) - values.max)
       # require 'pry'; binding.pry
       raise Triangle::TriangleError
     elsif values == [@c] * 3
