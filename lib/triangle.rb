@@ -20,10 +20,11 @@ class Triangle
       return :scalene
     end
   end
+  class TriangleError < StandardError
+    # def message
+    #   "Not a triangle"
+    # end
+  end
 end
 
-class TriangleError < StandardError
-  # def message
-  #   "Not a triangle"
-  # end
-end
+
