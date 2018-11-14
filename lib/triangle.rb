@@ -14,7 +14,9 @@ class Triangle
       return :isosceles
     elsif values.include(0)
       raise TriangleError
-      
+    else
+      return :scalene
+
 
     end
   end
