@@ -9,7 +9,7 @@ class Triangle
   def kind
     values = [@a, @b, @c]
     if values.include?(0)
-      require 'pry'; binding.pry
+      # require 'pry'; binding.pry
       raise TriangleError
     elsif values == [@c] * 3
       return :equilateral
