@@ -10,7 +10,7 @@ class Triangle
     values = [@a, @b, @c]
     require 'pry'; binding.pry
     if values.include?(0)
-
+      require 'pry'; binding.pry
       raise TriangleError
     elsif values == [@c] * 3
       return :equilateral
@@ -20,10 +20,11 @@ class Triangle
       return :scalene
     end
   end
+  class TriangleError < StandardError
+    # def message
+    #   "Not a triangle"
+    # end
+  end
 end
 
-class TriangleError < StandardError
-  # def message
-  #   "Not a triangle"
-  # end
-end
+
